@@ -12,7 +12,16 @@ import thumbnail8 from '../../assets/thumbnail8.png'
 
 const Feet = () => {
   return (
-    <></>
+    <>
+      <div className="feed">
+        <div className="card">
+          <img src={thumbnail1} alt="" />
+          <h2>Best channel to learn coding that help you to be a web developer</h2>
+          <h3>GreatStack</h3>
+          <p>15k views &bull; 2 days ago</p>
+        </div>
+      </div>
+    </>
   )
 }
 
