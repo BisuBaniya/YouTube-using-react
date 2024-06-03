@@ -51,6 +51,48 @@ const PlayVideo = () => {
               </div>
             </div>
           </div>
+          <div className="comment">
+            <img src={user_profile} alt="" />
+            <div>
+              <h3>Jack Nicholson <span>1 day ago</span></h3>
+              <p>A global computer network providing a variety of information and cc
+                of interconnected networks using standardized communication protocols.
+              </p>
+              <div className="comment-action">
+                <img src={like} alt="" />
+                <span>244</span>
+                <img src={dislike} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="comment">
+            <img src={user_profile} alt="" />
+            <div>
+              <h3>Jack Nicholson <span>1 day ago</span></h3>
+              <p>A global computer network providing a variety of information and cc
+                of interconnected networks using standardized communication protocols.
+              </p>
+              <div className="comment-action">
+                <img src={like} alt="" />
+                <span>244</span>
+                <img src={dislike} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="comment">
+            <img src={user_profile} alt="" />
+            <div>
+              <h3>Jack Nicholson <span>1 day ago</span></h3>
+              <p>A global computer network providing a variety of information and cc
+                of interconnected networks using standardized communication protocols.
+              </p>
+              <div className="comment-action">
+                <img src={like} alt="" />
+                <span>244</span>
+                <img src={dislike} alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
