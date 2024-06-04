@@ -9,6 +9,9 @@ import jack from '../../assets/jack.png'
 import user_profile from '../../assets/user_profile.jpg'
 import { useState } from 'react'
 import { API_KEY } from '../../data'
+import { value_converter } from '../../data'
+import moment from 'moment'
+
 
 const PlayVideo = ({videoId}) => {
 
@@ -35,9 +38,9 @@ const PlayVideo = ({videoId}) => {
       <div className="play-video">
         {/* <video src={video1} controls autoPlay muted></video> */}
         <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <h3>{apiData?apiData.snippet.title:'Loading...'}</h3>
+        <h3>{apiData?apiData.snippet.title:'Title here'}</h3>
         <div className="play-video-info">
-          <p>1523 Views &bull; 2 days ago</p>
+          <p>{apiData?value_converter(apiData.statistics.viewCount):'16K'} Views &bull; {apiData?`${moment(apiData.snippet.publishedAt).fromNow()}`:'18 hours ago'}</p>
           <div>
             <span><img src={like} alt="" />125</span>
             <span><img src={dislike} alt="" />2</span>
