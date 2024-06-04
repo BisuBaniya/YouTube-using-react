@@ -36,4 +36,5 @@ const Feed = ({ category }) => {
   );
 };
 
+
 export default Feed;
