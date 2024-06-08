@@ -14,6 +14,7 @@ dist-ssr
 src/data.js
 youtube-data.json
 channel-data.json
+comment-data.json
 
 # Editor directories and files
 .vscode/*
